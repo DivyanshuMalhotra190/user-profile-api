@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "7a467b1e-e48f-4786-bb1c-378d64cf2a80",
+		"name": "User-profile-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33404577"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/api/users/register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDA0MzJiYjA1Njg1NGMxNDViYzAxYSIsImlhdCI6MTc0MTcwMTkzMSwiZXhwIjoxNzQ0MjkzOTMxfQ.exwfF3h3oOsv5bmQxDsGFxZp3sF0c0AfNBNoMo6PDG8",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Divyanshu Malhotra\",\r\n  \"email\": \"divyanshu@example.com\",\r\n  \"password\": \"123456\",\r\n  \"address\": \"delhi\",\r\n  \"bio\": \"I am a coder\",\r\n  \"profilePic\": \"https://www.google.com/url?sa=i&url=https%3A%2F%2Fgratisography.com%2F&psig=AOvVaw1CVvkA5M_kHxLzAOkOJeIp&ust=1743251667098000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMiEntXkrIwDFQAAAAAdAAAAABAE\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/users/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/users/profile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZTY5NzY5ZjZhNzJjMTE4OGJiZTRlNiIsImlhdCI6MTc0MzE2NTI4OSwiZXhwIjoxNzQ1NzU3Mjg5fQ.xKG46vzxc_IkzgJ-p74aGX-t07hP1a0Z6Fo0idqTfBY",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Divyanshu Malhotra\",\r\n  \"email\": \"divyanshu@example.com\",\r\n  \"password\": \"123456\",\r\n  \"address\": \"delhi\",\r\n  \"bio\": \"I am a coder\",\r\n  \"profilePic\": \"https://www.google.com/url?sa=i&url=https%3A%2F%2Fgratisography.com%2F&psig=AOvVaw1CVvkA5M_kHxLzAOkOJeIp&ust=1743251667098000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMiEntXkrIwDFQAAAAAdAAAAABAE\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/users/profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/users/profile",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZTY5NzY5ZjZhNzJjMTE4OGJiZTRlNiIsImlhdCI6MTc0MzE2NTI4OSwiZXhwIjoxNzQ1NzU3Mjg5fQ.xKG46vzxc_IkzgJ-p74aGX-t07hP1a0Z6Fo0idqTfBY",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Divyanshu\",\r\n  \"address\": \"Saket, Delhi\",\r\n  \"bio\": \"hey hey\"\r\n  \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/users/profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
